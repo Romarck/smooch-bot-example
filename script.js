@@ -20,7 +20,7 @@ module.exports = new Script({
         receive: (bot, message) => {
             const name = message.text;
             return bot.setProp('name', name)
-                .then(() => bot.say(`Legal! Então posso lhe chamar de ${name}
+                .then(() => bot.say(`Legal! Diga, então posso lhe chamar de ${name}
 Tudo bem? %[Sim](postback:sim) %[Não](postback:nao)`))
                 .then(() => 'finish');
         }
